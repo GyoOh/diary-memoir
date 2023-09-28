@@ -26,6 +26,7 @@ import {
     margin-bottom: 15px;
   `;
 const DiaryDisplay =({data, isLoading}) => {
+  
     return (
         <DiaryContainer>
              {isLoading && (
