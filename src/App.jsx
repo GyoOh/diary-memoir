@@ -5,7 +5,20 @@ import styled from 'styled-components'
 import logo from "./assets/logo.png"
 import DiaryDisplay from './components/DiaryDisplay';
 import { message } from "antd";
-import { LogoImg } from './components/CommonStyles';
+import {
+  DiaryContainer,
+  ResultTitle,
+  Divider,
+  CardContainer,
+  CardTitle,
+  CardContent,
+  ActionListItem,
+  LoadingContainer,
+  LogoImg
+} from "./components/CommonStyles";
+import {
+  EditTwoTone
+} from "@ant-design/icons";
 
 function App() {
   const [data, setData] = useState({
@@ -46,8 +59,18 @@ function App() {
     <AppConatiner>
       {contextHolder}
       <AppTitle>
-     Gyo's Psychological Counselor GPT<LogoImg src={logo}></LogoImg>
+    GPT Counselor<LogoImg src={logo}></LogoImg>
       </AppTitle>
+      <CardContainer>
+        <CardTitle>
+          <EditTwoTone
+            twoToneColor={"#B5EAD7"}
+            style={{ marginRight: "20px", }}
+          />
+         Write your diary and get feedback from GPT-3.
+        </CardTitle>
+        <CardContent>{data.analysis}</CardContent>
+      </CardContainer>
       <DiaryInput
         messageApi={messageApi}
         isLoading={isLoading}

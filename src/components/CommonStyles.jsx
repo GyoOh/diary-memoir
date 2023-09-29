@@ -51,3 +51,12 @@ export const ActionListItem = styled.li`
   margin-bottom: 5px;
   list-style: none;
 `;
+export const AppDiscrption = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 20px;
+  margin: 10px;
+  background-color: #f5f5f5;
+`;
