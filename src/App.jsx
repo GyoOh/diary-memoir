@@ -59,7 +59,7 @@ function App() {
     <AppConatiner>
       {contextHolder}
       <AppTitle>
-    GPT Counselor<LogoImg src={logo}></LogoImg>
+      AI Counselor<LogoImg src={logo}></LogoImg>
       </AppTitle>
       <CardContainer>
         <CardTitle>
@@ -67,7 +67,7 @@ function App() {
             twoToneColor={"#B5EAD7"}
             style={{ marginRight: "20px", }}
           />
-         Write your diary and get feedback from GPT-3.
+         Write your diary and get feedback from GPT.
         </CardTitle>
       </CardContainer>
       <DiaryInput
