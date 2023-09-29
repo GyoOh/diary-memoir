@@ -69,7 +69,6 @@ function App() {
           />
          Write your diary and get feedback from GPT-3.
         </CardTitle>
-        <CardContent>{data.analysis}</CardContent>
       </CardContainer>
       <DiaryInput
         messageApi={messageApi}
